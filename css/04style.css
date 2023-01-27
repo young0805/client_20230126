@@ -1,0 +1,22 @@
+/* external css(외부 css) : css 파일에 스타일 코드 작성*/
+/* css 주석 */
+
+h1 {
+    color: greenyellow; 
+    background-color: chocolate;
+}
+
+p{
+    color:brown;
+    background-color: aqua;
+}
+
+h2{
+    color:springgreen;
+    background-color: gold;
+}
+
+h3{
+    color:powderblue;
+    background-color: rgb(52, 98, 151);
+}
