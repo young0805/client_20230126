@@ -1,0 +1,55 @@
+<!-- <div>요소의 직계 자식인 모든 <p> 요소의 색상을 "빨간색"으로 변경합니다.-->
+<style>
+    div > p
+     {
+      color: red;
+    }
+    </style>
+    
+    <body>
+    
+    <div>
+      <p>This is a paragraph.</p>
+      <p>This is a paragraph.</p>
+    </div>
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+    
+</body>
+
+<!-- <div> 요소의 자손인 모든 <p> 요소의 색상을 "빨간색"으로 변경합니다. -->
+<style>
+  div p
+   {
+    color: red;
+  }
+  </style>
+  
+  <body>
+  
+  <div>
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+  </div>
+  <p>This is a paragraph.</p>
+  <p>This is a paragraph.</p>
+
+  </body>
+
+<!-- <div> 요소의 형제 인 <p> 요소의 색상 을 "빨간색"으로 변경합니다.-->
+  <style>
+    div + p
+     {
+      color: red;
+    }
+  </style>
+    
+    <body>
+    <div>
+      <p>This is a paragraph.</p>
+      <p>This is a paragraph.</p>
+    </div>
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+    
+    </body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 자식 선택자*/
+        .sub > h1{
+            color:springgreen;
+        }
+
+        /* 자손 선택자*/
+        /* h1위에 cotainer만 있으면 적용됨*/
+        .container h1{
+            border: 5px dotted;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- .container>.sub>h1>lorem1 -->
+    <div class="container">
+        <div class="sub">
+            <h1>Lorem.</h1>
+            <h1>Lorem.</h1>
+        </div>
+    </div>
+
+    <h1>Lorem, ipsum dolor.</h1>
+
+</body>
+</html>

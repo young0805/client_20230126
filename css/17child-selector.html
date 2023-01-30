@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       /*Selector Specificity: (0, 0, 1): 1점 */
+       li{
+            text-decoration: underline;
+        }
+
+        /*Selector Specificity: (0, 0, 2): 2점*/
+        /* > : 자식 선택자 */
+        ul > li{
+            color:fuchsia;
+        }
+
+        /*Selector Specificity: (0, 1, 1): 11점*/
+        .todo > li{
+            background-color: chartreuse;
+        }
+
+        /*Selector Specificity: (0, 1, 1): 11점*/
+        /* 부모 요소가 note 클래스인 li요소들의 정렬을 오른쪽 */
+        .note > li{
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- ul*2>li*3>lorem1 -->
+    <ul class="todo">
+        <li>Lorem.</li>
+        <li>Eos.</li>
+        <li>Reprehenderit.</li>
+    </ul>
+    <ul class="note">
+        <li>Lorem.</li>
+        <li>Suscipit!</li>
+        <li>Quisquam!</li>
+    </ul>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .error{
+            background-color: red;
+            color: white;
+        }
+
+        /* note 클래스인 요소들이 배경색 노랑*/ 
+        .note{
+            background-color: yellow;
+        }
+
+        .delete{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <!-- class 속성은 영문, 숫자, _, -조합으로 작성 -->
+    <!-- 중복 가능 -->
+    
+    <!-- h1*10>lorem2 -->
+    <h1 class="error">Lorem, ipsum.</h1>
+    <h1 class="note">Non, fugiat?</h1>
+    <h1 class="error">Provident, laboriosam.</h1>
+    <h1 class="note">Tenetur, quos?</h1>
+    <h1 class="note">Commodi, consectetur.</h1>
+    <h1 class="delete">Assumenda, nihil.</h1>
+    <h1 class="delete">Est, atque!</h1>
+    
+    <!-- 하나의 요소는 빈칸으로 구분한 여러 클래스를 가질 수 있다.-->
+    <!-- note 클래스와 delete 클래스 둘 다 소속되어있다. -->
+    <h1 class="note delete">Quo, eligendi!</h1>
+    <h1 class="note delete">Placeat, quia?</h1>
+
+    <!-- error 클래스와 delete 클래스 둘 다 소속되어있다. -->
+    <h1 class="error delete">Enim, ducimus?</h1>
+</body>
+</html>

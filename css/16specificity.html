@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        /* 구체적(특징/자세하게) 선택할 수록 우선순위가 높다*/ 
+        /*specificity: 마우스에 오른쪽 가져다 되면,얼마나 특정지었는지 숫자로 표현한다*/
+        /* 구체적 순위: h1.note.error > h1.note > h1 */
+        /* elemet selector: 1점 */
+        /* class selector: 10점 */
+        /* id selector: 100점*/
+
+        /*Selector Specificity: (0, 0, 1): 1점*/
+        h1{
+            border: 5px solid;
+        }
+        
+        /*Selector Specificity: (0, 1, 1): 11점*/
+        h1.note{
+            border: 5px dotted;
+        }
+
+        /*Selector Specificity: (0, 2, 1): 21점*/
+        h1.note.error{
+            border: 5px double;
+        }
+
+        /*Selector Specificity: (0, 2, 0): 20점*/
+        .note.error{
+            border:8px outset;
+        }
+
+        /*Selector Specificity: (0, 2, 1): 21점*/ 
+        /* 같은 점수를 가지고 있을 경우, 밑에 있는 순서대로 적용된다.*/
+        h1.note.error{
+            border: 5px inset;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- h1>lorem3 -->
+    <!-- h1.note>lorem3 -->
+    <!-- h1.note.error>lorem3 -->
+
+    <h1>Lorem, ipsum dolor.</h1>
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note error">Lorem, ipsum dolor.</h1>
+
+</body>
+</html>
