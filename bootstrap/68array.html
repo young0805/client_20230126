@@ -9,21 +9,33 @@
     </style>
 </head>
 <body>
-    // 산술연산자
-    // +, *, -, /, %, **
-    let a = 33; 
-    let b = 55; 
-    let c = a + b;
-    console.log(c); //88
-    
-    let d = 3 + b;
-    console.log(e); // 58
+<script>
+    let a = ['java', 'spring', 'jsp', 'react', 'next'];
 
-    console.log(3+5); // 8
+    console.log("*******0, 2, 4번째 요소 출력하기********");
 
-    let f = 99 - 77;
-    console.log(f); // 22
+    for (let i=0; i<a.length; i+=2){
+        console.log(a[i]);
+    }
 
+    console.log("***if문 사용해서 0, 2, 4번째 요소 출력하기***");
+
+    for (let i=0; i<a.length; i+=2){
+        if ((i%2) ==0)
+            console.log(a[i]);
+    }
+
+    console.log("*******continue 0, 2, 4번째 요소 출력하기********");
+
+    for (let i=0; i<a.length; i+=2){
+        if ((i%2) == 1)
+            continue;
+        console.log(a[i]);
+
+    }
+
+
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

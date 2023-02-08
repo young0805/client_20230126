@@ -9,21 +9,47 @@
     </style>
 </head>
 <body>
-    // 산술연산자
-    // +, *, -, /, %, **
-    let a = 33; 
-    let b = 55; 
-    let c = a + b;
-    console.log(c); //88
-    
-    let d = 3 + b;
-    console.log(e); // 58
+<script>
+    function a(){
+        console.log("파라미터 없는 함수");
 
-    console.log(3+5); // 8
+    }
 
-    let f = 99 - 77;
-    console.log(f); // 22
+    a();
+    a(33);
 
+    function b(param1, param2){
+        console.log("파라미터 2개 있는 함수"); 
+        console.log(param1, param2);
+    }
+
+    b();
+    b(99);
+    b(11, 22); // 인수는 매개변수 순서에 맞게 들어감
+
+    console.log("*****printDouble 함수 호출*****")
+
+    function printDouble(num){
+        let d = num *2;
+        console.log(d);
+    }
+
+    printDouble(3); // 6
+    printDouble(4); // 8
+    printDouble(100); // 200
+ 
+    console.log("*****printSum 함수 호출*****")
+
+    function printSum(num1, num2){
+        let r = num1 + num2;
+        console.log(r);
+    }
+
+    printSum(3,4);
+    printSum(100,200);
+    printSum("java", "css");
+
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

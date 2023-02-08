@@ -9,21 +9,26 @@
     </style>
 </head>
 <body>
-    // 산술연산자
-    // +, *, -, /, %, **
-    let a = 33; 
-    let b = 55; 
-    let c = a + b;
-    console.log(c); //88
+<script>
+
+    console.log(1);
     
-    let d = 3 + b;
-    console.log(e); // 58
+    console.log("****함수가 작성 되기 전에 호출해도 호출됨****")
+    a();
 
-    console.log(3+5); // 8
+    function a(){
+        console.log("abc");
+        console.log("edf");
+    }
 
-    let f = 99 - 77;
-    console.log(f); // 22
+    console.log(2);
 
+    console.log("****함수 호출****")
+    a(); // 함수 정의 후에 실행 코드 작성
+    a(); 
+    a();
+
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

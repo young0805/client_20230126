@@ -9,21 +9,37 @@
     </style>
 </head>
 <body>
-    // 산술연산자
-    // +, *, -, /, %, **
-    let a = 33; 
-    let b = 55; 
-    let c = a + b;
-    console.log(c); //88
-    
-    let d = 3 + b;
-    console.log(e); // 58
+<script>
+    // 객체의 property 이름은 lowerCamelCase
 
-    console.log(3+5); // 8
+    let a = {
+        address: "seoul", 
+        age: 55, 
+        bookTitle:"spring"};
 
-    let f = 99 - 77;
-    console.log(f); // 22
+    console.log(a.address);
+    console.log(a.age);
+    console.log(a.bookTitle);
 
+    // 값 변경
+    console.log("****값 변경***")
+
+    a.address = "jeju";
+    console.log(a.address);
+
+    let b = a.age;
+    console.log(b)
+
+    a.age = 66;
+    console.log(a.age);
+
+    // 새 property 추가
+    console.log("****값 추가***")
+    a.job = "teacher";
+    console.log(a.job);
+
+
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

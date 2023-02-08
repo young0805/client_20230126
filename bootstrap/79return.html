@@ -9,21 +9,24 @@
     </style>
 </head>
 <body>
-    // 산술연산자
-    // +, *, -, /, %, **
-    let a = 33; 
-    let b = 55; 
-    let c = a + b;
-    console.log(c); //88
+<script>
+    function sum(num){
+        let total = 0;
+        for (let i=0; i<= num ; i++){
+            total += i;
+        } 
+
+        return total;
+    }
     
-    let d = 3 + b;
-    console.log(e); // 58
+    let sum10 = sum(10); // 1 ~10 합
+    let sum100 = sum(100); // 1 ~ 100 합
 
-    console.log(3+5); // 8
+    console.log("1~10의 합은 ", sum10)
+    console.log("1~100의 합은 ", sum100)
 
-    let f = 99 - 77;
-    console.log(f); // 22
 
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

@@ -9,21 +9,32 @@
     </style>
 </head>
 <body>
-    // 산술연산자
-    // +, *, -, /, %, **
-    let a = 33; 
-    let b = 55; 
-    let c = a + b;
-    console.log(c); //88
-    
-    let d = 3 + b;
-    console.log(e); // 58
-
-    console.log(3+5); // 8
-
-    let f = 99 - 77;
-    console.log(f); // 22
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    function a(param) {
+        console.log("어떤 일을 함");
+    }
+
+    a(3);
+    a(4);
+
+    function b(param) {
+        console.log("비함수가 일함");
+
+        // 함수의 실행 결과
+        // 결과값 return(반환)
+        return "어떤 결과";
+    }
+    b(5);
+    b(6);
+
+    let r1 = a(); // 결과 없음
+    let r2 = b(); // 결과 있음 (return의 오른쪽값)
+
+    console.log(r1); // undefined
+    console.log(r2);
+    console.log(b());
+    </script>
 </body>
 </html>

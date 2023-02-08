@@ -9,21 +9,29 @@
     </style>
 </head>
 <body>
-    // 산술연산자
-    // +, *, -, /, %, **
-    let a = 33; 
-    let b = 55; 
-    let c = a + b;
-    console.log(c); //88
-    
-    let d = 3 + b;
-    console.log(e); // 58
-
-    console.log(3+5); // 8
-
-    let f = 99 - 77;
-    console.log(f); // 22
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    function a() {
+        console.log("java");
+    }
+
+    a();
+
+    // 함수정의할 때 ()내에 parameter(매개변수) 목록 작성 가능
+    // 파라미터이름은 lowerCamelCase 관습 따름
+    // 파라미터는 함수호출할 때 값을 받음
+    function b(param) {
+        console.log("b함수 실행됨");
+        console.log(param);
+    }
+
+    b();
+    b(3);// argument(인수, 인자): 전달하는 값
+    b(4);// 4를 넣어서 b함수 호출 코드 작성
+    b("css");
+    b([3, 4, 5]);
+    b({addres: "seoul", age: 33});
+    </script>
 </body>
 </html>

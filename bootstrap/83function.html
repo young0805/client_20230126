@@ -9,21 +9,23 @@
     </style>
 </head>
 <body>
-    // 산술연산자
-    // +, *, -, /, %, **
-    let a = 33; 
-    let b = 55; 
-    let c = a + b;
-    console.log(c); //88
-    
-    let d = 3 + b;
-    console.log(e); // 58
+<script>
+    // first-class function
+    // - 인수로 전달 가능
+    // - 값으로 반환 가능
+    // - 데이터 구조에 저장 가능
 
-    console.log(3+5); // 8
+    // - 변수에 할당 가능
+    function a() {
+        console.log("a라는 함수가 실행하는 코드들...");
+    }
 
-    let f = 99 - 77;
-    console.log(f); // 22
+    let b; 
+    b = a; // a라는 함수를 b에 할당한 것이다. a를 호출한 것이 아니다.
 
+    a();
+
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

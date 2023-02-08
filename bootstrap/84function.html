@@ -9,21 +9,24 @@
     </style>
 </head>
 <body>
-    // 산술연산자
-    // +, *, -, /, %, **
-    let a = 33; 
-    let b = 55; 
-    let c = a + b;
-    console.log(c); //88
-    
-    let d = 3 + b;
-    console.log(e); // 58
+<script>
+    // first-class function
+    // 인수로 전달 가능
 
-    console.log(3+5); // 8
+    function a() {
+        console.log("에이 함수 실행됨");
+    }
 
-    let f = 99 - 77;
-    console.log(f); // 22
+    function b(param) {
+        console.log(param);
+        param();
+    }
 
+    //b("hello");
+    b(a);
+
+
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

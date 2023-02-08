@@ -9,21 +9,37 @@
     </style>
 </head>
 <body>
-    // 산술연산자
-    // +, *, -, /, %, **
-    let a = 33; 
-    let b = 55; 
-    let c = a + b;
-    console.log(c); //88
+<script>
+
+    console.log("***배열을 사용한 코드****");
+
+    let a = ['java', 'spring', 55];
+    console.log(a[0]);
+    console.log(a[2]);
+
+ 
+    console.log("***object 사용한 코드****");
+
+    // object: 여러 값을 저장한 자료형(data type)
+    // 사용기호: { }
+    // 각 값에 이름을 명시(property)
+
+    let b = {lang: "java", frame: "spring", age: 55};
     
-    let d = 3 + b;
-    console.log(e); // 58
+    // 값을 읽을 때 ["property name"] 사용(거의 안씀)
+    console.log(b["lang"]);
+    console.log(b["frame"]);
+    console.log(b["age"]);
 
-    console.log(3+5); // 8
+    // 값을 읽을 때 .propertyName 사용 (이 기호로 사용할 것)
+    console.log("***propertyName 사용***");
 
-    let f = 99 - 77;
-    console.log(f); // 22
+    console.log(b.lang);
+    console.log(b.frame);
+    console.log(b.age);
 
+
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

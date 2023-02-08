@@ -9,21 +9,26 @@
     </style>
 </head>
 <body>
-    // 산술연산자
-    // +, *, -, /, %, **
-    let a = 33; 
-    let b = 55; 
-    let c = a + b;
-    console.log(c); //88
-    
-    let d = 3 + b;
-    console.log(e); // 58
+<script>
+    let a = ['java', 'css', 'spring', 'jsp'];
 
-    console.log(3+5); // 8
+    for (let i=0; i<a.length; i++){
+        console.log(a[i]);
+    }
 
-    let f = 99 - 77;
-    console.log(f); // 22
+    console.log("*******거꾸로 탐색 하는 법*******")
 
+    for (let i = 1; i <= a.length; i++) {
+        console.log(a[a.length - i]);
+    }
+
+    console.log("*******거꾸로 탐색 하는 법*******")
+
+    for (let i=a.length-1; i>= 0; i--){
+        console.log(a[i]);
+    }
+
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
