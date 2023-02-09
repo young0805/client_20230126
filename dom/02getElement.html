@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    </style>
+</head>
+<body>
+    <!-- h1#head$*3>lorem1 -->
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        At.
+    </h1>
+    <h1 id="head3">
+        Aperiam.
+    </h1>
+
+<script>
+    let o1 = document.getElementById("head1");
+    console.log(o1.textContent);
+
+    o1.textContent = "HELLO DOM";
+
+    o1.remove(); 
+
+    let o2 = document.getElementById("head2");
+
+    o2.textContent = "JAVASCRIPT";
+
+    // 아이디가 head3 요소의 텍스트 콘텐트를 바꾸기
+
+    let o3 = document.getElementById("head3");
+
+    o3.textContent = "오늘은 신나는 목요일";
+
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
